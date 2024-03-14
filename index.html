@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Music Player</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <h4>Music Player</h4>
+        <img id="track_image" class="images" />
+        <div class="song-details">
+          <h2 id="title">Song Title</h2>
+          <marquee id="artist">Artist Name</marquee>
+          <input
+            type="range"
+            id="durationSlider"
+            min="0"
+            max="100"
+            value="0"
+            onclick="changeDuration()"
+          />
+        </div>
+        <div class="controls">
+          <button onclick="previousSong()" id="prevBtn">
+            <i class="fa-solid fa-step-backward" aria-hidden="true"></i>
+          </button>
+          <button onclick="justPlay()" id="playPauseBtn">
+            <i class="fa-solid fa-play" aria-hidden="true"></i>
+          </button>
+          <button onclick="nextSong()" id="nextBtn">
+            <i class="fa-solid fa-step-forward" aria-hidden="true"></i>
+          </button>
+        </div>
+        <h3>Designed By <span>Praveen</span></h3>
+      </div>
+      
+    </div>
+
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <script src="script.js"></script>
+    <!-- <script src="musicplayer.js"></script> -->
+</body>
+</html>
