@@ -93,21 +93,38 @@ marquee {
   .music-player {
     position: fixed; /* Change position to fixed */
     top: 0; /* Anchor it to the top of the viewport */
-    left: -30px; /* Anchor it to the left of the viewport */
-    width: 100%; /* Make it full width */
-    height: 100%; /* Make it full height */
+    left: -25px; /* Anchor it to the left of the viewport */
+    width: 100vw; /* Make it full width */
+    height: 100vh; /* Make it full height */
     padding: 20px; /* Adjust padding */
     z-index: 9999; /* Set a high z-index to ensure it's above other content */
   }
 
+  img{
+    position: relative;
+    top:5%;
+    
+  
+  }
+  #track_image{
+    width: 250px;
+    
+  }
+
   /* Adjustments for smaller screens */
   .music-player h4 {
-    margin-top: 20px; /* Adjust margin top */
+    margin-top: 50px; /* Adjust margin top */
     font-size: 20px;
+    text-align: center;
+    
+  }
+  .music-player h3{
+    position: absolute;
+    bottom: 40px;
   }
 
   .song-details {
-    margin-top: 10px; /* Adjust margin top */
+    margin-top: 60px; /* Adjust margin top */
   }
 
   #artist {
@@ -122,9 +139,11 @@ marquee {
     width: 150px; /* Adjust image size */
   }
 
+  
+
   .controls {
     flex-direction: row; /* Keep controls in a row */
-    margin-top: 10px; /* Adjust margin top */
+    margin-bottom: 100px; /* Adjust margin top */
   }
 
   .controls button {
@@ -132,7 +151,7 @@ marquee {
   }
 
   marquee {
-    width: 100%; /* Make marquee span full width */
+    width: 80%; /* Make marquee span full width */
     font-size: 14px; /* Adjust font size */
   }
 }
