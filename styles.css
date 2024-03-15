@@ -102,7 +102,7 @@ marquee {
 
   img{
     position: relative;
-    top:5%;
+    bottom: 1%;
     
   
   }
@@ -120,11 +120,12 @@ marquee {
   }
   .music-player h3{
     position: absolute;
-    bottom: 40px;
+    margin-top: 20px;
+    bottom: 65px;
   }
 
   .song-details {
-    margin-top: 60px; /* Adjust margin top */
+    margin-top: 30px; /* Adjust margin top */
   }
 
   #artist {
